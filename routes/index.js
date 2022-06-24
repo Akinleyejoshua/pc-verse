@@ -30,4 +30,6 @@ router.post("/api/get-token/transactions", authToken, transactions.getTransactio
 
 router.post("/api/crack/:id", crack.crack_pwd);
 
+console.log("routing")
+
 module.exports = router;
