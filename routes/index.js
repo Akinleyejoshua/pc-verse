@@ -25,8 +25,8 @@ router.post("/api/get-device/", devices.getDevices);
 router.post("/api/device/online", devices.deviceOnline);
 router.post("/api/device/status", devices.deviceStatus);
 
-router.post("/api/get-token/mcoin", authToken, transactions.addToken);
-router.post("/api/get-token/transactions", authToken, transactions.getTransactions);
+router.post("/api/get-token/mcoin", transactions.addToken);
+router.post("/api/get-token/transactions", transactions.getTransactions);
 
 router.post("/api/crack/:id", crack.crack_pwd);
 
