@@ -13,7 +13,7 @@ router.get("/api/user/:id", user.getData);
 router.post("/api/user/@:username", authToken, user.getData);
 router.post("/api/notifications/:id", authToken, user.getNofification);
 
-router.get("/api/get-token/data", authToken, transactions.getCredencials);
+router.get("/api/get-token/data", transactions.getCredencials);
 router.post("/api/auth/signup/", auth.signUp);
 router.post("/api/auth/signin/", auth.login);
 router.post("/api/auth/verify/account/", auth.verifyAccount);
