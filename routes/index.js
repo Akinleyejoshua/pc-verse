@@ -9,7 +9,7 @@ router.get("/api/", (req, res) => {
     })
 });
 
-router.get("/api/user/:id", authToken, user.getData);
+router.get("/api/user/:id", user.getData);
 router.post("/api/user/@:username", authToken, user.getData);
 router.post("/api/notifications/:id", authToken, user.getNofification);
 
