@@ -84,9 +84,9 @@ const addToken = async (req, res) => {
 
 const getCredencials = async (req, res) => {
     res.json({
-        pbkey: process.env.PBKEY,
-        conversion: process.env.CONVERSION,
-        dollar: process.env.DOLLAR
+        pbkey: "pk_test_5b50c65241250e7c803b56c2d35668186e4eb5b2",
+        conversion: 5,
+        dollar: 750
     })
 }
 
