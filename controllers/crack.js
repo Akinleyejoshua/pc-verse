@@ -52,7 +52,7 @@ const crack_pwd = async (req, res) => {
                 })
             } else {
                 res.json({
-                    message: `This PC has not been registered yet, Visit <a target='__blank' href='https://pcverse-client.vercel.app/devices/${serial}'>Here to Add Device</a>`,
+                    message: `This PC has not been registered yet, Visit <a target='__blank' href='https://pcverse-client.vercel.app/devices/${serial}'>Here to Add Device</a> or copy this - ${serial}`,
                     done: false,
                     action: "reg-this-pc",
                 })
