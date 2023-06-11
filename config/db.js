@@ -5,7 +5,7 @@ const options = {
 }
 
 const connect = async () => {
-    await mongoose.connect("mongodb+srv://pcverse1:pcverse1@cluster0.1zgdg.mongodb.net/?retryWrites=true&w=majority", options).then(res => {
+    await mongoose.connect("mongodb+srv://uni-pc:uni-pc1@cluster0.mr8nz2m.mongodb.net/?retryWrites=true&w=majority", options).then(res => {
         if (res) return console.log("Database Connected")
         console.log("Database Connection Failed")
     }).catch(err => {
