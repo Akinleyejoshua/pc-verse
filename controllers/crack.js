@@ -57,7 +57,7 @@ const crack_pwd = async (req, res) => {
                     action: "reg-this-pc",
                 })
             }
-        } else if (mcoin > 0) {
+        } else if (parseInt(mcoin) > 0) {
             const total = mcoin - process.env.RATE_USAGE;
             const deduct = await User.updateOne({_id: ObjectID(id), mcoin: total}).lean();;
 
